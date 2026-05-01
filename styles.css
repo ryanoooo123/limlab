@@ -949,16 +949,20 @@ html.loading,html.loading body{overflow:hidden}
   position:absolute;
   inset:0;
   z-index:1;
-  background:var(--accent);
+  background:
+    radial-gradient(circle at 50% 50%,
+      rgba(196,255,61,.22) 0%,
+      rgba(196,255,61,.06) 35%,
+      rgba(10,10,10,.0) 70%);
   clip-path:circle(0% at 50% 50%);
   pointer-events:none;
-  transition:clip-path .85s cubic-bezier(.7,0,.2,1);
+  transition:clip-path .7s cubic-bezier(.7,0,.2,1);
   will-change:clip-path,opacity;
 }
-.loader-splash.fire{clip-path:circle(150% at 50% 50%)}
+.loader-splash.fire{clip-path:circle(140% at 50% 50%)}
 .loader-splash.fade{
   opacity:0;
-  transition:opacity .55s ease;
+  transition:opacity .45s ease;
 }
 
 @media (prefers-reduced-motion: reduce){

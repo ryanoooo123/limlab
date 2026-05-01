@@ -43,9 +43,9 @@
     var DELETE_MS = 55;     // per-char delete speed
     var GAP_MS = 220;       // pause between delete and type
     var TYPE_MS = 95;       // per-char type speed
-    var POST_TYPE_HOLD = 550; // pause before splash fires
-    var SPLASH_GROW = 850;  // splash circle grow time
-    var SPLASH_FADE = 550;  // splash fade-out time
+    var POST_TYPE_HOLD = 450; // pause before splash fires
+    var SPLASH_GROW = 700;  // splash circle grow time
+    var SPLASH_FADE = 450;  // splash fade-out time
 
     if (!loaderText || !loaderCaret || !loaderSplash){
       // markup missing — bail safely
