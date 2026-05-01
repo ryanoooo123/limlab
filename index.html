@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Limelab — AI tools, shipped fast.</title>
+<meta name="description" content="Developer building AI tools, Telegram bots, Chrome extensions, and web tools. Available for paid work in USDC.">
+<meta name="theme-color" content="#0a0a0a">
+<script>document.documentElement.classList.add('loading');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <p class="loader-line"><span class="accent">&gt;</span> initializing<span class="lc"></span></p>
+  <div class="loader-bar"></div>
+</div>
+
+<div class="scroll-progress" id="progress" aria-hidden="true"></div>
+<div class="trail" id="trail" aria-hidden="true"></div>
+
+<aside class="pill" aria-label="Availability status">
+  <span class="dot" aria-hidden="true"></span>
+  <span>Available for work</span>
+</aside>
+
+<main>
+  <section class="hero" id="top">
+    <p class="hero-label">// developer</p>
+    <h1 class="headline" id="headline" aria-label="Limelab ships fast."></h1>
+    <div class="headline-underline" id="ul"></div>
+    <p class="subhead" id="subhead">Telegram bots. Chrome extensions. Web tools. Shipped, not promised.</p>
+    <div class="cta-row" id="ctarow">
+      <a href="#work" class="btn">See work ↓</a>
+      <a href="#contact" class="btn btn-primary">Hire me →</a>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">scroll</div>
+  </section>
+
+  <section id="about" class="reveal">
+    <span class="section-num" data-num="01">01 / ABOUT</span>
+    <p class="label">// who I am</p>
+    <h2>One builder. AI tools that ship.</h2>
+    <div class="about-grid">
+      <div class="about-body">
+        <p class="about-lead">Limelab is a one-person studio that <span class="accent">builds the thing</span> instead of pitching it. Telegram bots, Chrome extensions, AI-wrapped web tools — the kind of software that ships in a week and pays for itself in two.</p>
+        <p>I started Limelab because every "agency" I'd worked with sold strategy decks and outsourced the code. I flipped it: no decks, no retainers, no juniors learning on your dollar. You hire the builder, you get the build.</p>
+        <p>I work crypto-native, talk in Telegram, invoice in USDC, and hand over the repo on delivery. If a project doesn't fit in 7 days, I say so — and break it into pieces that do.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat"><p class="num">40+</p><p class="lbl">tools shipped</p></div>
+        <div class="stat"><p class="num">7d</p><p class="lbl">avg turnaround</p></div>
+        <div class="stat"><p class="num">1:1</p><p class="lbl">no middle layer</p></div>
+        <div class="stat"><p class="num">USDC</p><p class="lbl">paid in</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mission" class="reveal">
+    <span class="section-num" data-num="02">02 / MISSION</span>
+    <p class="label">// my aim</p>
+    <h2>What I'm here to do.</h2>
+    <blockquote class="mission">
+      <p>Make custom software cheap enough and fast enough that builders, traders, and small teams stop renting bloated SaaS and start owning the tools they actually use.</p>
+      <span class="by">— the limelab thesis</span>
+    </blockquote>
+    <div class="about-grid" style="margin-top:3rem">
+      <div class="about-body">
+        <p>SaaS got expensive. AI made coding fast. The gap between "I wish a tool did X" and "here is the tool" used to be three months and twenty grand. I'm collapsing that to a week and a few hundred USDC.</p>
+        <p>Every build I do is a small bet that one-person tools beat fifty-person platforms — at least for the 90% of jobs you don't need a fifty-person platform for.</p>
+      </div>
+      <div class="about-body">
+        <p><strong style="color:var(--fg)">What I won't do:</strong> retainers, ongoing maintenance contracts, "AI strategy consulting," or anything that doesn't end with running code in your hands.</p>
+        <p><strong style="color:var(--fg)">What I will do:</strong> ship fast, hand over the keys, answer your messages, fix what breaks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="reveal">
+    <span class="section-num" data-num="03">03 / WORK</span>
+    <p class="label">// recent work</p>
+    <h2>Things I've shipped.</h2>
+    <div class="work-grid">
+
+      <article class="card reveal" data-stagger="0">
+        <div class="thumb"></div>
+        <div class="card-body">
+          <span class="tag">Telegram bot</span>
+          <h3>WhaleWatch</h3>
+          <p>Tracks large Solana wallet movements and pings you the second whales rotate.</p>
+          <div class="card-links">
+            <a class="link" href="#" target="_blank" rel="noopener">Live →</a>
+            <a class="link" href="#" target="_blank" rel="noopener">Code →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-stagger="1">
+        <div class="thumb thumb-2"></div>
+        <div class="card-body">
+          <span class="tag">Chrome extension</span>
+          <h3>ContextSwitch</h3>
+          <p>One-click focus sessions. Mutes the noisy tabs, opens the work ones, starts the timer.</p>
+          <div class="card-links">
+            <a class="link" href="#" target="_blank" rel="noopener">Live →</a>
+            <a class="link" href="#" target="_blank" rel="noopener">Code →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-stagger="2">
+        <div class="thumb thumb-3"></div>
+        <div class="card-body">
+          <span class="tag">Web tool</span>
+          <h3>QuickDune</h3>
+          <p>Generate Solana token analytics dashboards in seconds. No SQL, no setup.</p>
+          <div class="card-links">
+            <a class="link" href="#" target="_blank" rel="noopener">Live →</a>
+            <a class="link" href="#" target="_blank" rel="noopener">Code →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="process" class="reveal">
+    <span class="section-num" data-num="04">04 / PROCESS</span>
+    <p class="label">// how I work</p>
+    <h2>From idea to running code.</h2>
+    <div class="process-list">
+      <div class="process-step">
+        <div class="process-num">01</div>
+        <div>
+          <h3>Brief</h3>
+          <p>You drop a paragraph in Telegram or email. I reply within 24 hours with a yes/no, a price, and a ship date — or a question if the scope isn't clear yet.</p>
+          <span class="when">day 0</span>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="process-num">02</div>
+        <div>
+          <h3>Scope &amp; deposit</h3>
+          <p>One short doc: what's in, what's out, what it costs. 50% USDC up front. No contracts longer than a page.</p>
+          <span class="when">day 1</span>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="process-num">03</div>
+        <div>
+          <h3>Build</h3>
+          <p>You get a private channel and daily progress pings. Mid-build demos so you can steer before things go too far in the wrong direction.</p>
+          <span class="when">days 2–6</span>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="process-num">04</div>
+        <div>
+          <h3>Ship &amp; handover</h3>
+          <p>Final 50% on delivery. Repo transferred, docs included, deploy walked through with you. The thing runs on your infra, not mine.</p>
+          <span class="when">day 7</span>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="process-num">05</div>
+        <div>
+          <h3>14 days of free fixes</h3>
+          <p>If it breaks because I built it wrong, I fix it. After that, hourly rate or a new mini-build — your call.</p>
+          <span class="when">days 8–22</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="reveal">
+    <span class="section-num" data-num="05">05 / SERVICES</span>
+    <p class="label">// what I build</p>
+    <h2>Hire me to ship.</h2>
+    <div class="services-grid">
+      <div class="service">
+        <p class="service-num">01 / TELEGRAM BOTS</p>
+        <h3>Telegram &amp; Discord bots</h3>
+        <p>Alerts, automations, mini-tools your community actually opens. Wired to whatever API you need.</p>
+        <p class="price">from $200 USDC</p>
+      </div>
+      <div class="service">
+        <p class="service-num">02 / EXTENSIONS</p>
+        <h3>Chrome extensions</h3>
+        <p>Single-purpose tools that live where you work. Manifest V3, no bloat, ship-ready in days.</p>
+        <p class="price">from $300 USDC</p>
+      </div>
+      <div class="service">
+        <p class="service-num">03 / WEB TOOLS</p>
+        <h3>Custom web tools / scrapers</h3>
+        <p>Internal dashboards, scrapers, AI-wrapped utilities. The thing you keep meaning to build.</p>
+        <p class="price">from $400 USDC</p>
+      </div>
+      <div class="service">
+        <p class="service-num">04 / AI AUTOMATION</p>
+        <h3>AI automation</h3>
+        <p>Hook LLMs into your workflow. Inboxes, lead scoring, content pipelines, ops glue — wired and running.</p>
+        <p class="price">from $500 USDC</p>
+      </div>
+      <div class="service">
+        <p class="service-num">05 / APPS &amp; SITES</p>
+        <h3>App &amp; website builds</h3>
+        <p>Landing pages, marketing sites, full web apps. Fast, hand-built, deployed. No template smell.</p>
+        <p class="price">from $600 USDC</p>
+      </div>
+    </div>
+    <p class="turnaround">// typical turnaround: 3-7 days</p>
+  </section>
+
+  <section id="why" class="reveal">
+    <span class="section-num" data-num="06">06 / WHY</span>
+    <p class="label">// why limelab</p>
+    <h2>Why choose Limelab.</h2>
+    <div class="why-grid">
+
+      <div class="why-item" data-stagger="0">
+        <p class="why-stat">3-7d</p>
+        <h3>Ship fast</h3>
+        <p>Most projects ship in under a week. No discovery calls, no decks, no retainer trap.</p>
+      </div>
+
+      <div class="why-item" data-stagger="1">
+        <p class="why-stat">1:1</p>
+        <h3>You talk to the builder</h3>
+        <p>No account managers, no offshore team. The person scoping the work is the one writing the code — me.</p>
+      </div>
+
+      <div class="why-item" data-stagger="2">
+        <p class="why-stat">USDC</p>
+        <h3>Crypto-native</h3>
+        <p>Pay in USDC. No invoicing chase, no FX, no Stripe holds. Half upfront, half on ship.</p>
+      </div>
+
+      <div class="why-item" data-stagger="3">
+        <p class="why-stat">AI+</p>
+        <h3>LLM-fluent</h3>
+        <p>I build with AI in the loop — Claude, OpenAI, Replicate. Your tool gets the smart layer baked in.</p>
+      </div>
+
+      <div class="why-item" data-stagger="4">
+        <p class="why-stat">100%</p>
+        <h3>You own the code</h3>
+        <p>Repo handed over on delivery. No vendor lock-in, no rented infra you can't access.</p>
+      </div>
+
+      <div class="why-item" data-stagger="5">
+        <p class="why-stat">14d</p>
+        <h3>Free fixes</h3>
+        <p>Two weeks of free bug fixes after delivery. If it breaks because I built it, I fix it.</p>
+      </div>
+
+      <div class="why-item" data-stagger="6">
+        <p class="why-stat">∅</p>
+        <h3>No bloat</h3>
+        <p>Single-purpose tools that do one thing well. No dashboards you'll never open, no subscriptions.</p>
+      </div>
+
+      <div class="why-item" data-stagger="7">
+        <p class="why-stat">24h</p>
+        <h3>Fast replies</h3>
+        <p>I answer messages within 24 hours. Usually within the hour during builds.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="team" class="reveal">
+    <span class="section-num" data-num="07">07 / WHO</span>
+    <p class="label">// the builder</p>
+    <h2>The person building this.</h2>
+    <div class="team-grid" style="grid-template-columns:1fr;max-width:640px">
+
+      <div class="team-card">
+        <div class="avatar">R</div>
+        <h3>Ryan</h3>
+        <p class="team-role">Founder / Builder</p>
+        <p>Solo developer behind every Limelab project. I write the code, ship the build, and answer your messages. No agency layer, no offshored work, no "we'll get back to you" — you talk to the person who actually builds the thing.</p>
+        <p style="margin-top:.85rem">Mostly AI tools, Telegram bots, Chrome extensions, and crypto-adjacent web tools. Comfortable shipping a working thing in a week and iterating from there.</p>
+        <div class="team-stack">
+          <span>TypeScript</span><span>Python</span><span>Claude</span><span>OpenAI</span><span>React</span><span>Postgres</span><span>Solana</span><span>Manifest V3</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="reveal">
+    <span class="section-num" data-num="08">08 / CONTACT</span>
+    <p class="label">// get in touch</p>
+    <h2>Let's build.</h2>
+    <div class="contact-grid">
+
+      <form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/94i88mama@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Limelab inquiry">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="field-row">
+          <div class="field">
+            <label for="cf-name">Who you are</label>
+            <input type="text" id="cf-name" name="name" required autocomplete="name" placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="cf-email">Reply email</label>
+            <input type="email" id="cf-email" name="email" required autocomplete="email" placeholder="you@email.com">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="cf-reason">Why you're reaching out</label>
+          <input type="text" id="cf-reason" name="reason" required placeholder="One line — e.g. need a Telegram bot, hiring, partnership, just saying hi">
+        </div>
+
+        <div class="field">
+          <label for="cf-message">Details</label>
+          <textarea id="cf-message" name="message" required placeholder="Tell me a bit more — what's the context, what do you want to happen next?"></textarea>
+        </div>
+
+        <button type="submit" class="form-submit" id="cf-submit">Send →</button>
+        <p class="form-status" id="cf-status" aria-live="polite"></p>
+      </form>
+
+      <aside class="contact-side">
+        <h3>How this works</h3>
+        <p>Drop the form. I read every message and reply within 24 hours — usually with a yes/no, a price, and a ship date. If your idea isn't a fit, I'll tell you fast and (where I can) point you somewhere that is.</p>
+        <h3>Prefer to call?</h3>
+        <p>Phone is fine for quick scoping chats once we've traded a message or two — leave it in the form and I'll reach out.</p>
+      </aside>
+
+    </div>
+  </section>
+</main>
+
+<footer>Built with Claude Code · 2026</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
