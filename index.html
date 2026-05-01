@@ -15,8 +15,10 @@
 <body>
 
 <div class="loader" id="loader" aria-hidden="true">
-  <p class="loader-line"><span class="accent">&gt;</span> initializing<span class="lc"></span></p>
-  <div class="loader-bar"></div>
+  <div class="loader-stage">
+    <span class="loader-text" id="loaderText"></span><span class="loader-caret" id="loaderCaret"></span>
+  </div>
+  <div class="loader-splash" id="loaderSplash"></div>
 </div>
 
 <div class="scroll-progress" id="progress" aria-hidden="true"></div>
@@ -29,6 +31,7 @@
 
 <main>
   <section class="hero" id="top">
+    <canvas class="hero-bg" id="heroBg" aria-hidden="true"></canvas>
     <p class="hero-label">// developer</p>
     <h1 class="headline" id="headline" aria-label="Limelab ships fast."></h1>
     <div class="headline-underline" id="ul"></div>
@@ -37,7 +40,6 @@
       <a href="#work" class="btn">See work ↓</a>
       <a href="#contact" class="btn btn-primary">Hire me →</a>
     </div>
-    <div class="scroll-cue" aria-hidden="true">scroll</div>
   </section>
 
   <section id="about" class="reveal">
